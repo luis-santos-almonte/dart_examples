@@ -22,7 +22,7 @@ void funNullValues() {
   int? b = null; //This variable expects int or null variables.
   int? c; //This variable is initialized with a default null value.
 
-  // print(a);
+  //print(a);
   b ??= 3;
   print(b);
   b ??= 5;
