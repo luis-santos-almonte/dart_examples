@@ -10,4 +10,9 @@ class task {
   void complete() {
     isCompleted = true;
   }
+
+  @override
+  String toString(){
+    return 'ID: $id - Task: $name | ${isCompleted ? '[X]' : '[ ]'} $name';
+  }
 }
