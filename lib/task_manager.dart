@@ -12,4 +12,14 @@ class taskManager {
       print('Error al crear la tarea: $e');
     }
   }
+
+  void removeTask(int id) {
+    try {
+      final task = tasks.firstWhere((task) => task.id == id);
+      tasks.remove(task);
+      print('Tarea eliminada: ID: ${task.id}, Nombre: ${task.name}');
+    } catch (e) {
+      print('Error: No se encontró una tarea con el ID $id');
+    }
+  }
 }
