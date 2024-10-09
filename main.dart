@@ -1,25 +1,28 @@
 /// THIS IS THE START
 void main() {
-  funInterpolation();
+  funInterpolation('Improving');
   funNullValues();
 }
 
 // ====== Section 1: String Interpolation ======
 
-void funInterpolation() {
-  String word = 'testing';
-  String upperWord = word.toUpperCase();
-  print(word + ' ' + upperWord);
+void funInterpolation(String word) {
+  try {
+    String upperWord = word.toUpperCase();
+    print(word + ' ' + upperWord);
+  } catch (e) {
+    print('Error in function funInterpolation: $e');
+  }
 }
 
 // ====== Section 2: Null values (Variables/Operators) ======
 
 void funNullValues() {
-  int a = null; //This variable only expects int values.
+  //int a = null; //This variable only expects int values.
   int? b = null; //This variable expects int or null variables.
   int? c; //This variable is initialized with a default null value.
 
-  print(a);
+  // print(a);
   b ??= 3;
   print(b);
   b ??= 5;
