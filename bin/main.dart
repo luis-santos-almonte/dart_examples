@@ -41,6 +41,7 @@ void main() {
         break;
       case '4':
         newTaskManager.listTasks();
+        stdin.readLineSync();
         break;
       case '5':
         running = false;
