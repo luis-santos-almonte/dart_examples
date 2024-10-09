@@ -1,21 +1,16 @@
 /// THIS IS THE START
-
-// ====== Sección 1: Interpolación de Strings ======
-
 void main() {
-  Interpolacion();
+  funInterpolation();
 }
 
-void Interpolacion() {
-  String word = 'mira';
+// ====== Section 1: String Interpolation ======
+
+void funInterpolation() {
+  String word = 'testing';
   String upperWord = word.toUpperCase();
   print(word + ' ' + upperWord);
 }
 
+    // ====== Section 2: Null values (Variables/Operators) ======
 
-
-    // ====== Sección 2: Interpolación de Strings ======
-
-    // ====== Sección 1: Interpolación de Strings ======
-
-    // ====== Sección 1: Interpolación de Strings ======
+    // ====== Section 3: Collections ======
