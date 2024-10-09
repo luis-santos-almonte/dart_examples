@@ -15,11 +15,11 @@ void funInterpolation() {
 // ====== Section 2: Null values (Variables/Operators) ======
 
 void funNullValues() {
-  int a = null; //This variable only expects int values.
+  //int a = null; //This variable only expects int values.
   int? b = null; //This variable expects int or null variables.
   int? c; //This variable is initialized with a default null value.
 
-  print(a);
+  //print(a);
   b ??= 3;
   print(b);
   b ??= 5;
