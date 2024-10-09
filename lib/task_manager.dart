@@ -32,4 +32,11 @@ class taskManager {
       print('Error al completar la tarea $id: $e');
     }
   }
+
+  void listTasks() {
+    print('Lista de Tareas:');
+    for (var task in tasks) {
+      print(task);
+    }
+  }
 }

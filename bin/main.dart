@@ -40,6 +40,7 @@ void main() {
         }
         break;
       case '4':
+        newTaskManager.listTasks();
         break;
       case '5':
         running = false;
