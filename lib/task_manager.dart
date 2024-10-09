@@ -1,7 +1,7 @@
 import 'task.dart';
 
 class taskManager {
-  List<task> tasks = [];
+  final List<task> tasks = [];
   int _taskIdCounter = 1;
 
   void addTask(String name) {

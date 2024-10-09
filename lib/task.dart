@@ -1,7 +1,7 @@
 //this is a task manager project
 
 class task {
-  int id;
+  final int id;
   String name;
   bool isCompleted;
 
