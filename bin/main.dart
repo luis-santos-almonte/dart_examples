@@ -23,6 +23,13 @@ void main() {
         break;
       case '2':
         print('Ingresa el ID de la tarea a eliminar:');
+        final taskIdToRemove = int.tryParse(stdin.readLineSync() ?? '0');
+        if (taskIdToRemove != null) {
+          newTaskManager.removeTask(taskIdToRemove);
+        } else {
+          print('ID inválido.');
+        }
+
         break;
       case '3':
         print('Ingresa el ID de la tarea a completar:');
