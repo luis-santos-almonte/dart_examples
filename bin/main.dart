@@ -19,7 +19,7 @@ void main() {
       case '1':
         print('Ingresa el nombre de la tarea:');
         final taskName = stdin.readLineSync() ?? 'Tarea sin nombre';
-        taskManager.addTask(taskName);
+        newTaskManager.addTask(taskName);
         break;
       case '2':
         print('Ingresa el ID de la tarea a eliminar:');
