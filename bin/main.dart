@@ -29,10 +29,15 @@ void main() {
         } else {
           print('ID inválido.');
         }
-
         break;
       case '3':
         print('Ingresa el ID de la tarea a completar:');
+        final taskIdToComplete = int.tryParse(stdin.readLineSync() ?? '0');
+        if (taskIdToComplete != null) {
+          newTaskManager.removeTask(taskIdToComplete);
+        } else {
+          print('ID inválido.');
+        }
         break;
       case '4':
         break;
