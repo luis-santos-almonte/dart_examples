@@ -1,15 +1,18 @@
 /// THIS IS THE START
 void main() {
-  funInterpolation();
+  funInterpolation('Improving');
   funNullValues();
 }
 
 // ====== Section 1: String Interpolation ======
 
-void funInterpolation() {
-  String word = 'testing';
-  String upperWord = word.toUpperCase();
-  print(word + ' ' + upperWord);
+void funInterpolation(String word) {
+  try {
+    String upperWord = word.toUpperCase();
+    print(word + ' ' + upperWord);
+  } catch (e) {
+    print('Error in function funInterpolation: $e');
+  }
 }
 
 // ====== Section 2: Null values (Variables/Operators) ======
