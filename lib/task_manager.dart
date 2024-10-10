@@ -34,9 +34,13 @@ class taskManager {
   }
 
   void listTasks() {
+    try {
     print('Lista de Tareas:');
     for (var task in tasks) {
       print(task);
+    }
+    } catch (e) {
+      print('Error al imprimir las tareas: $e');
     }
   }
 }
